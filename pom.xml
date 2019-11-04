@@ -33,7 +33,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>collections4</artifactId>
-            <version></version>
+            <version>${collections4}</version>
         </dependency>
 
         <dependency>
