@@ -7,10 +7,12 @@ import org.apache.commons.collections4.map.MultiValueMap;
 import
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TestRequest extends AbstractActor {
-    private MultiMap<String,String> store = new MultiValueMap<>();
+    private Map<String,List<String>> store = new HashMap<>();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
