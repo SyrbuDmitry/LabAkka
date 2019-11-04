@@ -7,15 +7,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StoreTestResault {
-    private String ID, value;
-    StoreTestResault(String ID,String value){
+    private String ID, resault;
+    StoreTestResault(String ID,String resault){
         this.ID=ID;
-        this.value=value;
+        this.resault=resault;
     }
     public String getID() {
         return ID;
     }
-    public String getValue() {
-        return value;
+    public String getResault() {
+        return resault;
     }
 }

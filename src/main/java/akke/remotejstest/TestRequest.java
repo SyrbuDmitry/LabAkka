@@ -14,7 +14,7 @@ public class TestRequest extends AbstractActor {
     public Receive createReceive(){
         return ReceiveBuilder.create()
                 .match(StoreTestResault.class, m -> {
-                store.put(m.getID(), m.getValue());
+                store.put(m.getID(), m.getResault());
                 System.out.println("receive message! "+m.toString());
                 })
                 .match(GetMessage.class, req -> sender().tell(
