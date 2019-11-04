@@ -18,9 +18,9 @@ public class TestRequest extends AbstractActor {
                 System.out.println("receive message! "+m.toString());
                 })
                 .match(GetResaultMessage.class, req -> {
-                    Collection r = (Collection)store.get(req.getID());
+                    List<String> r = (List<String>)store.get(req.getID());
                     sender().tell(
-                            new ResualtsMessage(req.getID(), (List<String>) store.get(req.getID())), self())
+                            new ResualtsMessage(req.getID(),r, self());
                         }
                 ).build();
     }
