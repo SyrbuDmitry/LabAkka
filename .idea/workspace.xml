@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="" />
+    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +47,8 @@
       <file leaf-file-name="StroreActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,8 +108,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="308" />
-    <option name="y" value="157" />
+    <option name="x" value="394" />
+    <option name="y" value="250" />
     <option name="width" value="1019" />
     <option name="height" value="877" />
   </component>
@@ -300,15 +302,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572896115543</updated>
       <workItem from="1572896119331" duration="224000" />
-      <workItem from="1572896355221" duration="1011000" />
+      <workItem from="1572896355221" duration="1086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1235000" />
+    <option name="totallyTimeSpent" value="1310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="308" y="157" width="1019" height="877" extended-state="0" />
+    <frame x="394" y="250" width="1019" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -393,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
