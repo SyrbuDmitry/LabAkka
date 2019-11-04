@@ -6,9 +6,9 @@ import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StoreTestResault {
+public class StoreTestResaultMessage {
     private String ID, resault;
-    StoreTestResault(String ID,String resault){
+    StoreTestResaultMessage(String ID, String resault){
         this.ID=ID;
         this.resault=resault;
     }
