@@ -2,11 +2,12 @@ package akke.remotejstest;
 
 import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
+import org.apache.commons.collections4.MultiMap;
 import org.apache.commons.collections4.map.MultiValueMap;
 import
 
 public class TestRequest extends AbstractActor {
-    private MultiValueMap<String,String> store = new MultiValueMap<>();
+    private MultiMap store = new MultiValueMap<>();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
