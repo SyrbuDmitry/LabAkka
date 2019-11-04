@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +110,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="550" />
+    <option name="x" value="361" />
     <option name="y" value="23" />
     <option name="width" value="1019" />
     <option name="height" value="877" />
@@ -303,15 +304,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572896115543</updated>
       <workItem from="1572896119331" duration="224000" />
-      <workItem from="1572896355221" duration="1249000" />
+      <workItem from="1572896355221" duration="1257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1473000" />
+    <option name="totallyTimeSpent" value="1481000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="550" y="23" width="1019" height="877" extended-state="0" />
+    <frame x="361" y="23" width="1019" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -397,7 +398,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
