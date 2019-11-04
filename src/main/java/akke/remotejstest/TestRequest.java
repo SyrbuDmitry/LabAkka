@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class TestRequest extends AbstractActor {
-    private MultiMap store = new MultiValueMap();
+    private MultiMap<String,String> store = new MultiValueMap<>();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
@@ -19,7 +19,7 @@ public class TestRequest extends AbstractActor {
                 System.out.println("receive message! "+m.toString());
                 })
                 .match(GetResaultMessage.class, req -> sender().tell(
-                        new ResualtsMessage(req.getID(), (List<String>) store.get(req.getID())), self())
+                        new ResualtsMessage(req.getID(), (List<String>)store.get(req.getID())), self())
                 ).build();
     }
 }
