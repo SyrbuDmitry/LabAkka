@@ -15,4 +15,7 @@ public class ResualtsMessage {
     public String getKey() {
         return key;
     }
+    public List<String> getResaults(){
+        return resaults;
+    }
 }

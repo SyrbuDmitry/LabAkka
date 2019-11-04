@@ -4,15 +4,12 @@ import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;
 import org.apache.commons.collections4.MultiMap;
 import org.apache.commons.collections4.map.MultiValueMap;
-import
 
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class TestRequest extends AbstractActor {
-    private Map<String,List<String>> store = new HashMap<>();
+    private MultiMap<String,String> store = new MultiValueMap<>();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
@@ -20,8 +17,11 @@ public class TestRequest extends AbstractActor {
                 store.put(m.getID(), m.getResault());
                 System.out.println("receive message! "+m.toString());
                 })
-                .match(GetResaultMessage.class, req -> sender().tell(
-                        new ResualtsMessage(req.getID(), (List<String>)store.get(req.getID())), self())
+                .match(GetResaultMessage.class, req -> {
+                    Collection r = (Collection)store.get(req.getID());
+                    sender().tell(
+                            new ResualtsMessage(req.getID(), (List<String>) store.get(req.getID())), self())
+                        }
                 ).build();
     }
 }
