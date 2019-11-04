@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,22 +44,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRequest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+            <state relative-caret-position="225">
+              <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StoreTestResault.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StoreTestResault.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java" />
       </list>
     </option>
   </component>
@@ -170,36 +173,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="remotejstest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="akka-labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-collections4:4.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="akka-labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-collections4:4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-collections4-4.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-collections4:4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-collections4-4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="collections4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-labs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-collections4:4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-collections4-4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="collections4" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,12 +311,12 @@
       <updated>1572896115543</updated>
       <workItem from="1572896119331" duration="224000" />
       <workItem from="1572896355221" duration="2191000" />
-      <workItem from="1572899567580" duration="284000" />
+      <workItem from="1572899567580" duration="365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2699000" />
+    <option name="totallyTimeSpent" value="2780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="325" y="23" width="1019" height="877" extended-state="0" />
@@ -425,7 +398,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -453,14 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -479,9 +446,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        <state relative-caret-position="225">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
