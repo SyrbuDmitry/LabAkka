@@ -7,7 +7,7 @@ import org.apache.commons.collections4.map.MultiValueMap;
 import
 
 public class TestRequest extends AbstractActor {
-    private MultiMap store = new MultiValueMap<>();
+    private MultiMap store = new MultiValueMap();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
