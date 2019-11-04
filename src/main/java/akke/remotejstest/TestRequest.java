@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class TestRequest extends AbstractActor {
-    private Map<String,String> store = new HashMap<>();
+    private MultiValuedMap<String,String> store = new HashMap<>();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
