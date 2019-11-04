@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="" />
+    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreMessage.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +48,8 @@
       <file leaf-file-name="StroreActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="210">
+              <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StoreMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreMessage.java">
+      <file leaf-file-name="StoreTestResault.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -106,8 +109,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="445" />
-    <option name="y" value="79" />
+    <option name="x" value="556" />
+    <option name="y" value="23" />
     <option name="width" value="1019" />
     <option name="height" value="877" />
   </component>
@@ -300,15 +303,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572896115543</updated>
       <workItem from="1572896119331" duration="224000" />
-      <workItem from="1572896355221" duration="1152000" />
+      <workItem from="1572896355221" duration="1202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1376000" />
+    <option name="totallyTimeSpent" value="1426000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="445" y="79" width="1019" height="877" extended-state="0" />
+    <frame x="556" y="23" width="1019" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -375,10 +378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -393,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StroreActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

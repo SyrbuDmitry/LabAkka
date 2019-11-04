@@ -1,4 +1,4 @@
 package akke.remotejstest;
 
-public class StoreMessage {
+public class StoreTestResault {
 }
