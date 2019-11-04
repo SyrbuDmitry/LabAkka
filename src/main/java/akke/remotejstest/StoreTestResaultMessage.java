@@ -18,4 +18,8 @@ public class StoreTestResaultMessage {
     public String getResault() {
         return resault;
     }
+    @Override
+    public String toString(){
+        return ID+" : "+resault;
+    }
 }
