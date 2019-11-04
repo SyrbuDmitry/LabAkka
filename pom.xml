@@ -29,13 +29,7 @@
             <artifactId>akka-stream_2.12</artifactId>
             <version>${akka.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-            <version>4.4</version>
-        </dependency>
-
+        
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-stream-testkit_2.12</artifactId>
