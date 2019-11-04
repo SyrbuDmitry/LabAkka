@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/akka-labs.iml" afterPath="$PROJECT_DIR$/akka-labs.iml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,11 +47,9 @@
       <file leaf-file-name="TestRequest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,6 +193,14 @@
               <item name="commons-collections4-4.0.jar" type="462c0819:PsiDirectoryNode" />
               <item name="collections4" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="akka-labs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.commons:commons-collections4:4.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-collections4-4.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="collections4" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -333,12 +338,12 @@
       <updated>1572896115543</updated>
       <workItem from="1572896119331" duration="224000" />
       <workItem from="1572896355221" duration="2191000" />
-      <workItem from="1572899567580" duration="208000" />
+      <workItem from="1572899567580" duration="284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2623000" />
+    <option name="totallyTimeSpent" value="2699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="325" y="23" width="1019" height="877" extended-state="0" />
@@ -412,9 +417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -476,11 +479,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
