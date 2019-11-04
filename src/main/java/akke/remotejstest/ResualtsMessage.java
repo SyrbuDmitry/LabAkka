@@ -6,8 +6,8 @@ import java.util.List;
 
 public class ResualtsMessage {
     private String key;
-    private String resaults;
-    ResualtsMessage(String key, String resaults){
+    private List<String> resaults;
+    ResualtsMessage(String key, List<String> resaults){
         this.key=key;
         this.resaults=resaults;
     }

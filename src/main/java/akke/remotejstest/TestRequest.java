@@ -6,6 +6,9 @@ import org.apache.commons.collections4.MultiMap;
 import org.apache.commons.collections4.map.MultiValueMap;
 import
 
+import java.util.Collection;
+import java.util.List;
+
 public class TestRequest extends AbstractActor {
     private MultiMap store = new MultiValueMap();
     @Override
@@ -16,7 +19,7 @@ public class TestRequest extends AbstractActor {
                 System.out.println("receive message! "+m.toString());
                 })
                 .match(GetResaultMessage.class, req -> sender().tell(
-                        new ResualtsMessage(req.getID(), store.get(req.getID())), self())
+                        new ResualtsMessage(req.getID(), (List<String>) store.get(req.getID())), self())
                 ).build();
     }
 }
