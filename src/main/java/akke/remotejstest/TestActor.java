@@ -13,10 +13,9 @@ public class TestActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(TestScript.class, m -> {
                     ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
-                    engine.eval(jscript);
+                    engine.eval(m.functionBody);
                     Invocable invocable = (Invocable) engine;
-                    return invocable.invokeFunction(functionName, params).toString();
-
+                    invocable.invokeFunction(m.functionBody, m.test).toString();
                 })
                 .build();
     }
