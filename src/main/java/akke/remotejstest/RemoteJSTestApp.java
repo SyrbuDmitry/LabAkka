@@ -13,6 +13,6 @@ public class RemoteJSTestApp {
                 .props(Props.create(StoreActor.class)),
                 "Router for lab"
         );
-        //ActorRef storeActor = system.actorOf(Props.create(StoreActor.class));
+        ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class));
     }
 }
