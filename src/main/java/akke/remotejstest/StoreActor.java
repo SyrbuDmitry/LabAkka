@@ -9,7 +9,7 @@ import org.apache.commons.collections4.map.MultiValueMap;
 import java.util.List;
 import java.util.Map;
 
-public class TestRequest extends AbstractActor {
+public class StoreActor extends AbstractActor {
     private Map<String,String> store = new HashedMap<>();
     @Override
     public Receive createReceive(){

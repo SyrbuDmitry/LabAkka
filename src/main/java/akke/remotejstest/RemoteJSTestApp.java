@@ -4,16 +4,15 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.routing.RoundRobinPool;
-import akka.routing.RoundRobinRoutingLogic;
 
 public class RemoteJSTestApp {
     public static void main(String[] args){
         ActorSystem system = ActorSystem.create("lab4");
         ActorRef router = system.actorOf(
                 new RoundRobinPool(1)
-                .props(Props.create(TestRequest.class)),
+                .props(Props.create(StoreActor.class)),
                 "Router for lab"
         );
-        //ActorRef storeActor = system.actorOf(Props.create(TestRequest.class));
+        //ActorRef storeActor = system.actorOf(Props.create(StoreActor.class));
     }
 }
