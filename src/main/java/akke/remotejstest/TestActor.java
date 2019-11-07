@@ -8,6 +8,7 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 public class TestActor extends AbstractActor {
+    
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
@@ -15,9 +16,10 @@ public class TestActor extends AbstractActor {
                     ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
                     engine.eval(m.functionBody);
                     Invocable invocable = (Invocable) engine;
-                    invocable.invokeFunction(m.functionBody, m.test).toString();
+                    sender().tell(
+                            new ResultsMessage(m.functionBody,invocable.invokeFunction(m.functionBody, m.test).toString()),self()
+                    );
                 })
                 .build();
-    }
     }
 }
