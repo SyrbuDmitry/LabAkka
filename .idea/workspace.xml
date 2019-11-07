@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
-    </list>
+    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -344,12 +342,12 @@
       <workItem from="1572896355221" duration="2191000" />
       <workItem from="1572899567580" duration="2935000" />
       <workItem from="1573128478596" duration="182000" />
-      <workItem from="1573141104447" duration="1452000" />
+      <workItem from="1573141104447" duration="1578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6984000" />
+    <option name="totallyTimeSpent" value="7110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="427" width="1425" height="877" extended-state="0" />
