@@ -6,16 +6,16 @@ import java.util.List;
 
 public class ResultsMessage {
     private String key;
-    private List<String> resaults;
-    ResultsMessage(String key, List<String> resaults){
+    private String results;
+    ResultsMessage(String key, String results){
         this.key=key;
-        this.resaults=resaults;
+        this.results=results;
     }
 
     public String getKey() {
         return key;
     }
-    public List<String> getResaults(){
-        return resaults;
+    public String getResaults(){
+        return results;
     }
 }

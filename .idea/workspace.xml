@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="" />
+    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,18 +38,18 @@
       <file leaf-file-name="RemoteJSTestApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRequest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestRequest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,17 +57,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultsMessage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ResultsMessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="225">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,9 +133,10 @@
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResault.java" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/GetResaultMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResualtsMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResaultMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResultMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java" />
       </list>
     </option>
   </component>
@@ -143,7 +147,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
+    <option name="x" value="44" />
     <option name="y" value="23" />
     <option name="width" value="1425" />
     <option name="height" value="877" />
@@ -340,15 +344,15 @@
       <workItem from="1572896355221" duration="2191000" />
       <workItem from="1572899567580" duration="2935000" />
       <workItem from="1573128478596" duration="182000" />
-      <workItem from="1573141104447" duration="174000" />
+      <workItem from="1573141104447" duration="363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5706000" />
+    <option name="totallyTimeSpent" value="5895000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="23" width="1425" height="877" extended-state="0" />
+    <frame x="44" y="23" width="1425" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -431,10 +435,10 @@
           <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,10 +508,10 @@
           <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,35 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/GetResaultMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#111#112#0" expanded="true" />
-            <element signature="e#136#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreTestResultMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -657,14 +632,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/GetResaultMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
