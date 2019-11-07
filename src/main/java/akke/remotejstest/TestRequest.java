@@ -5,7 +5,6 @@ import akka.japi.pf.ReceiveBuilder;
 import org.apache.commons.collections4.MultiMap;
 import org.apache.commons.collections4.map.MultiValueMap;
 
-import java.util.Collection;
 import java.util.List;
 
 public class TestRequest extends AbstractActor {
@@ -13,13 +12,13 @@ public class TestRequest extends AbstractActor {
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
-                .match(StoreTestResaultMessage.class, m -> {
-                store.put(m.getID(), m.getResault());
+                .match(StoreTestResultMessage.class, m -> {
+                store.put(m.getID(), m.getResult());
                 System.out.println("receive message! "+m.toString());
                 })
                 .match(GetResaultMessage.class, req -> {
                     sender().tell(
-                            new ResualtsMessage(req.getID(), (List<String>) store.get(req.getID())), self());
+                            new ResultsMessage(req.getID(), (List<String>) store.get(req.getID())), self());
                         }
                 ).build();
     }
