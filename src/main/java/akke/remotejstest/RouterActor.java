@@ -17,6 +17,11 @@ public class RouterActor extends AbstractActor {
     );
     @Override
     public Receive createReceive() {
-        return ReceiveBuilder.create().build();
+        return ReceiveBuilder.create()
+                .match(TestResultMessage.class, t->StoreActor.tell(t))
+
+
+
+                .build();
     }
 }

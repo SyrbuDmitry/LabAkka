@@ -9,7 +9,6 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 public class TestActor extends AbstractActor {
-    ActorRef storeActor = getContext().actorSelection("lab4/mainRouter/storeActor").resolveOne();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
