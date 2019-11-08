@@ -15,6 +15,7 @@ import akka.stream.javadsl.Flow;
 public class RemoteJSTestApp extends AllDirectives{
     public static void main(String[] args){
         ActorSystem system = ActorSystem.create("lab4");
+        final RemoteJSTestApp instance = new RemoteJSTestApp();
 //        ActorRef router = system.actorOf(
 //                new RoundRobinPool(1)
 //                .props(Props.create(StoreActor.class)),
@@ -23,7 +24,7 @@ public class RemoteJSTestApp extends AllDirectives{
         ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class),"mainRouter");
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-        final RemoteJSTestApp instance = new RemoteJSTestApp();
-        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow = instance.createRoute()
+
+        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow = instance.createRout
     }
 }
