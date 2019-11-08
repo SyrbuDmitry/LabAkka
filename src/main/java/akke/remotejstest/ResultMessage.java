@@ -5,7 +5,7 @@ import org.apache.commons.collections4.map.MultiValueMap;
 import java.util.List;
 
 public class ResultMessage {
-    private String key;
+    private String packageID;
     private List<String> results;
     ResultMessage(String key, List<String> results){
         this.key=key;
