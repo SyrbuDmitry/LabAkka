@@ -1,9 +1,10 @@
 package akke.remotejstest;
 
 public class TestScript {
-    public String functionBody, test;
-    TestScript(String functionBody, String test){
+    public String functionBody, functionName,params;
+    TestScript(String functionName, String functionBody, String params){
+        this.functionName = functionName;
         this.functionBody = functionBody;
-        this.test = test;
+        this.params = params;
     }
 }

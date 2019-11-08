@@ -17,7 +17,7 @@ public class TestActor extends AbstractActor {
                     engine.eval(m.functionBody);
                     Invocable invocable = (Invocable) engine;
                     sender().tell(
-                            new ResultsMessage(m.functionBody,invocable.invokeFunction(m.functionBody, m.test).toString()),self()
+                            new ResultMessage(m.functionName,invocable.invokeFunction(m.functionName, m.params).toString()),self()
                     );
                 })
                 .build();

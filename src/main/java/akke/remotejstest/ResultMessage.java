@@ -4,10 +4,10 @@ import org.apache.commons.collections4.map.MultiValueMap;
 
 import java.util.List;
 
-public class ResultsMessage {
+public class ResultMessage {
     private String key;
-    private String results;
-    ResultsMessage(String key, String results){
+    private List<String> results;
+    ResultMessage(String key, List<String> results){
         this.key=key;
         this.results=results;
     }
@@ -15,7 +15,7 @@ public class ResultsMessage {
     public String getKey() {
         return key;
     }
-    public String getResaults(){
+    public List<String> getResaults(){
         return results;
     }
 }
