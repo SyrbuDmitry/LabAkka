@@ -1,11 +1,15 @@
 package akke.remotejstest;
 
+import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.http.javadsl.Http;
+import akka.http.javadsl.model.HttpRequest;
+import akka.http.javadsl.model.HttpResponse;
 import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
+import akka.stream.javadsl.Flow;
 
 public class RemoteJSTestApp {
     public static void main(String[] args){
@@ -18,6 +22,6 @@ public class RemoteJSTestApp {
         ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class),"mainRouter");
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-        MainHttp
+        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow = 
     }
 }
