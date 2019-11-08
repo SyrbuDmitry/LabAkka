@@ -4,18 +4,18 @@ import org.apache.commons.collections4.map.MultiValueMap;
 
 import java.util.List;
 
-public class ResultMessage {
-    private String packageID;
-    private List<String> results;
-    ResultMessage(String key, List<String> results){
-        this.key=key;
-        this.results=results;
+public class ResultsMessage {
+    private int packageID;
+    private List<String> testResults;
+    ResultsMessage(int packageID, List<String> testResults){
+        this.packageID=packageID;
+        this.testResults=testResults;
     }
 
-    public String getKey() {
-        return key;
+    public int getID() {
+        return packageID;
     }
     public List<String> getResaults(){
-        return results;
+        return testResults;
     }
 }

@@ -1,19 +1,20 @@
 package akke.remotejstest;
 
-public class StoreTestResultMessage {
-    private String ID, result;
-    StoreTestResultMessage(String ID, String result){
-        this.ID=ID;
-        this.result = result;
+public class TestResultMessage {
+    private String testResult;
+    private int packageID;
+    TestResultMessage(int packageID, String testResult){
+        this.packageID=packageID;
+        this.testResult = testResult;
     }
-    public String getID() {
-        return ID;
+    public int getID() {
+        return packageID;
     }
     public String getResult() {
-        return result;
+        return testResult;
     }
     @Override
     public String toString(){
-        return ID+" : "+ result;
+        return packageID+" : "+ testResult;
     }
 }

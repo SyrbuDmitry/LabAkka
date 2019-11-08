@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.Map;
 
 public class StoreActor extends AbstractActor {
-    private Map<String,List<String>> store = new HashedMap<>();
+    private Map<Integer,List<String>> store = new HashedMap<>();
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
-                .match(StoreTestResultMessage.class, m -> {
+                .match(TestResultMessage.class, m -> {
                     if(store.get(m.getID())!=null){
                         store.get(m.getID()).add(m.getResult());
                     }else{
@@ -26,7 +26,7 @@ public class StoreActor extends AbstractActor {
                     System.out.println("receive message! "+m.toString());
                 })
                 .match(GetResaultMessage.class, req -> sender().tell(
-                        new ResultMessage(req.getID(), store.get(req.getID())), self())
+                        new ResultsMessage(req.getID(), store.get(req.getID())), self())
                 ).build();
     }
 }
