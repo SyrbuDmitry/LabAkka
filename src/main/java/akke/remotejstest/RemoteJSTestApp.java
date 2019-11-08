@@ -7,11 +7,12 @@ import akka.actor.Props;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
+import akka.http.javadsl.server.AllDirectives;
 import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
-public class RemoteJSTestApp {
+public class RemoteJSTestApp extends AllDirectives{
     public static void main(String[] args){
         ActorSystem system = ActorSystem.create("lab4");
 //        ActorRef router = system.actorOf(
