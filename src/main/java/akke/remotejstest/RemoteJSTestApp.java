@@ -4,6 +4,7 @@ import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.http.impl.engine.client.PoolConductor;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
@@ -24,4 +25,5 @@ public class RemoteJSTestApp {
         final ActorMaterializer materializer = ActorMaterializer.create(system);
         final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow =
     }
+    PoolConductor.Route route = 
 }
