@@ -14,5 +14,6 @@ public class RemoteJSTestApp {
 //                "Router for lab"
 //        );
         ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class),"mainRouter");
+        
     }
 }
