@@ -7,16 +7,13 @@ import akka.actor.Props;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
-import akka.http.javadsl.server.AllDirectives;
 import akka.routing.RoundRobinPool;
-import akka.http.javadsl.server.Route;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
-public class RemoteJSTestApp extends AllDirectives{
+public class RemoteJSTestApp {
     public static void main(String[] args){
         ActorSystem system = ActorSystem.create("lab4");
-        final RemoteJSTestApp instance = new RemoteJSTestApp();
 //        ActorRef router = system.actorOf(
 //                new RoundRobinPool(1)
 //                .props(Props.create(StoreActor.class)),
@@ -25,7 +22,6 @@ public class RemoteJSTestApp extends AllDirectives{
         ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class),"mainRouter");
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-
-        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow = instance.createRout
+        final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow =
     }
 }
