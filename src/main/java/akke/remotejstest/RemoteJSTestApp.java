@@ -19,10 +19,10 @@ public class RemoteJSTestApp {
 //                .props(Props.create(StoreActor.class)),
 //                "Router for lab"
 //        );
-        final HighLevelServerExample
         ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class),"mainRouter");
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
+        Http instance = new Http(system);
         final Flow<HttpRequest,HttpResponse, NotUsed> routeFlow =
     }
 }
