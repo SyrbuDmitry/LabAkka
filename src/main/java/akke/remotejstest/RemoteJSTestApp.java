@@ -66,13 +66,16 @@ public class RemoteJSTestApp extends AllDirectives {
                         ),
 
                         pathSingleSlash(() ->
-                                post(() -> entity(Jackson.unmarshaller(PostRequestBody.class), msg -> {
+                                post(() ->{
+                                    String s;
+                                       return entity(Jackson.unmarshaller(PostRequestBody.class), msg -> {
                                     System.out.println(msg.JsScript);
 //                                    for(Test t:msg.tests){
 //                                        RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId),msg.functionName,msg.JsScript,t.params), ActorRef.noSender());
 //                                    }
                                     return complete("Tests started!");
-                                }))
+                                });
+                                })
                         )
                 );
 //                get(() -> concat(

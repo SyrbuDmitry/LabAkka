@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="" />
+    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,8 +90,8 @@
       <file leaf-file-name="RemoteJSTestApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="49" />
+            <state relative-caret-position="200">
+              <caret line="69" column="36" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,8 +187,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="522" />
-    <option name="y" value="26" />
+    <option name="x" value="584" />
+    <option name="y" value="23" />
     <option name="width" value="1561" />
     <option name="height" value="877" />
   </component>
@@ -410,15 +412,15 @@
       <workItem from="1573141104447" duration="5685000" />
       <workItem from="1573228361934" duration="1000" />
       <workItem from="1573228400465" duration="5120000" />
-      <workItem from="1573384586059" duration="12985000" />
+      <workItem from="1573384586059" duration="13251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29323000" />
+    <option name="totallyTimeSpent" value="29589000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="522" y="26" width="1561" height="877" extended-state="0" />
+    <frame x="584" y="23" width="1561" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -998,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="49" />
+        <state relative-caret-position="200">
+          <caret line="69" column="36" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
