@@ -19,7 +19,7 @@ public class TestActor extends AbstractActor {
                     String params = String.valueOf(m.params[0])+","+String.valueOf(m.params[1]);
                     System.out.println(m.functionName+" "+m.functionBody+" "+params);
                     sender().tell(
-                            new TestResultMessage(m.packageID,invocable.invokeFunction(m.functionName, m.params).toString()),self()
+                            new TestResultMessage(m.packageID,invocable.invokeFunction(m.functionName, new Integer[]{1,2}).toString()),self()
                     );
                 })
                 .build();
