@@ -55,7 +55,7 @@ public class RemoteJSTestApp extends AllDirectives {
         return
                 route(
                         pathSingleSlash(() ->
-                            get( () -> complete("GET!"))
+                            get( () -> )
                         ),
                         pathSingleSlash(() ->
                                 post(() -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> {
