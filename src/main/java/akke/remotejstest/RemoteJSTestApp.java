@@ -56,7 +56,10 @@ public class RemoteJSTestApp extends AllDirectives {
                 route(
                         pathSingleSlash(() ->
                             get( () ->
-                                    parameter("packageID", id)
+                                    parameter("packageID", id ->{
+                                        RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)),ActorRef.noSender());
+                                    }
+                                    )
                             )
                         ),
                         pathSingleSlash(() ->
