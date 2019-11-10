@@ -36,14 +36,14 @@ public class RemoteJSTestApp extends AllDirectives {
         final Http http = Http.get(system);
         RemoteJSTestApp instance = new RemoteJSTestApp();
         final ActorMaterializer materializer = ActorMaterializer.create(system);
-        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = instance.createRoute().flow(system, materializer);
+        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = instance.createRoute(RouteActor).flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
                 ConnectHttp.toHost("localhost",8085),
                 materializer
         );
         System.out.println("Server online at http://localhost:8085/\nPress RETURN to stop...");
-        
+
         System.in.read();
         binding
                 .thenCompose(ServerBinding::unbind)
@@ -51,7 +51,7 @@ public class RemoteJSTestApp extends AllDirectives {
     }
 
 
-    public Route createRoute() {
+    public Route createRoute(ActorRef RouteActor) {
         return
                 route(
                         pathSingleSlash(() ->
@@ -59,8 +59,8 @@ public class RemoteJSTestApp extends AllDirectives {
                         ),
                         pathSingleSlash(() ->
                                 post( () -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> {
-                                    for(t:msg.tests){
-                                        RouterActor.tell
+                                    for(Test t:msg.tests){
+                                        RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId),msg.functionName,msg.JsScript,t.params), ActorRef.noSender());
                                     }
                                 }))
                         )
