@@ -1,5 +1,6 @@
 package akke.remotejstest;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -12,6 +13,6 @@ public class PostRequestBody {
     public String JsScript;
     @JsonProperty("functionName")
     public String functionName;
-    @Json
+    @JsonBackReference
     public List<Test> tests;
  }
