@@ -4,6 +4,6 @@
 "functionName":"divideFn",
 "tests": [
 	{"testName":"test1"},
-	{"testName":"test2"}	}
+	{"testName":"test2"}
 ]
 }
