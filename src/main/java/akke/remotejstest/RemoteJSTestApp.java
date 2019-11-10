@@ -58,9 +58,9 @@ public class RemoteJSTestApp extends AllDirectives {
                 // only handle GET requests
                 route(
                         pathSingleSlash(() ->
-                            get(())->
+                            get( () -> complete("PONG!"))
                         )
-                )
+                );
 //                get(() -> concat(
 //                        // matches the empty path
 //                        pathSingleSlash(() ->
