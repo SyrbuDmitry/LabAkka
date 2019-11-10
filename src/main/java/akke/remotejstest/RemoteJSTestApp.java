@@ -53,9 +53,6 @@ public class RemoteJSTestApp extends AllDirectives {
         // This handler generates responses to `/hello?name=XXX` requests
 
         return
-                // here the complete behavior for this server is defined
-
-                // only handle GET requests
                 route(
                         pathSingleSlash(() ->
                             get( () -> complete("PONG!"))
