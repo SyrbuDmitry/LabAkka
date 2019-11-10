@@ -43,7 +43,7 @@ public class RemoteJSTestApp extends AllDirectives {
                 materializer
         );
         System.out.println("Server online at http://localhost:8085/\nPress RETURN to stop...");
-
+        Gson
         System.in.read();
         binding
                 .thenCompose(ServerBinding::unbind)
