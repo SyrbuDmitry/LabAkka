@@ -6,14 +6,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 public class PostRequestBody {
+    @JsonProperty("packageId")
     public String packageId;
+    @JsonProperty("JsScript")
     public String JsScript;
+    @JsonProperty("functionName")
     public String functionName;
+    @JsonProperty("tests")
     public List<Test> tests;
-    @JsonCreator
-    public PostRequestBody(@JsonProperty("packageId") String packageId, @JsonProperty("jsScript") String JsScript, @JsonProperty("functionName") String functionName)  {
-        this.packageId = packageId;
-        this.JsScript = JsScript;
-
-    }
  }
