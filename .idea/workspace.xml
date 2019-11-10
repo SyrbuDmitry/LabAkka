@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="" />
+    <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -104,8 +106,8 @@
       <file leaf-file-name="RemoteJSTestApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+            <state relative-caret-position="135">
+              <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,7 +180,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="15" />
-    <option name="y" value="23" />
+    <option name="y" value="469" />
     <option name="width" value="1425" />
     <option name="height" value="877" />
   </component>
@@ -249,6 +251,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -377,15 +380,15 @@
       <workItem from="1573141104447" duration="5685000" />
       <workItem from="1573228361934" duration="1000" />
       <workItem from="1573228400465" duration="5120000" />
-      <workItem from="1573384586059" duration="436000" />
+      <workItem from="1573384586059" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16774000" />
+    <option name="totallyTimeSpent" value="16888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="23" width="1425" height="877" extended-state="0" />
+    <frame x="15" y="469" width="1425" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -402,6 +405,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23719299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -414,7 +418,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -951,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        <state relative-caret-position="135">
+          <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
