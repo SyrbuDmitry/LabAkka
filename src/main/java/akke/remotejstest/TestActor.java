@@ -18,7 +18,7 @@ public class TestActor extends AbstractActor {
                     Invocable invocable = (Invocable) engine;
                     String params = String.valueOf(m.params[0])+","+String.valueOf(m.params[1]);
                     sender().tell(
-                            new TestResultMessage(m.packageID,invocable.invokeFunction(m.functionName, m.params).toString()),self()
+                            new TestResultMessage(m.packageID,invocable.invokeFunction(m.functionName, params).toString()),self()
                     );
                 })
                 .build();
