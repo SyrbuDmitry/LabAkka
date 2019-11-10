@@ -10,12 +10,12 @@ public class PostRequestBody {
     public String packageId;
     public String JsScript;
     public String functionName;
-    public List<JsonNode> tests;
+    public List<Test> tests;
     @JsonCreator
     public PostRequestBody(@JsonProperty("packageId") String packageId,
                            @JsonProperty("jsScript") String JsScript,
                            @JsonProperty("functionName") String functionName,
-                           @JsonProperty("tests") List<JsonNode> tests){
+                           @JsonProperty("tests") List<Test> tests){
         this.packageId = packageId;
         this.JsScript = JsScript;
         this.functionName = functionName;
