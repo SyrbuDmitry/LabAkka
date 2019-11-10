@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestActor.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -414,12 +414,12 @@
       <workItem from="1573141104447" duration="5685000" />
       <workItem from="1573228361934" duration="1000" />
       <workItem from="1573228400465" duration="5120000" />
-      <workItem from="1573384586059" duration="16286000" />
+      <workItem from="1573384586059" duration="16310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32624000" />
+    <option name="totallyTimeSpent" value="32648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="23" width="1561" height="877" extended-state="0" />
