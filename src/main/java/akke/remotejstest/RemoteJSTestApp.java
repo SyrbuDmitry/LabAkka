@@ -51,8 +51,12 @@ public class RemoteJSTestApp extends AllDirectives {
 
     public Route createRoute() {
         // This handler generates responses to `/hello?name=XXX` requests
-        Route route = get(
-                () -> complete("Received GET") ).orElse(
-                () -> complete("Received something else") )
+        Route helloRoute =
+                parameterOptional("name", optName -> {
+                    String name = optName.orElse("Mister X");
+                    return complete("Hello " + name + "!");
+                });
+        
+
     }
 }
