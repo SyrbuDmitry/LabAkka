@@ -7,8 +7,10 @@ import akka.japi.pf.ReceiveBuilder;
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import java.lang.reflect.Array;
 
 public class TestActor extends AbstractActor {
+
     @Override
     public Receive createReceive(){
         return ReceiveBuilder.create()
@@ -18,7 +20,8 @@ public class TestActor extends AbstractActor {
                     Invocable invocable = (Invocable) engine;
                     String params = String.valueOf(m.params[0])+","+String.valueOf(m.params[1]);
                     System.out.println(m.functionName+" "+m.functionBody+" "+params);
-                    Integer[m.params.length] params = new Integer()
+                    Integer[] pars = new Integer[m.params.length];
+                    
                     sender().tell(
                             new TestResultMessage(m.packageID,invocable.invokeFunction(m.functionName, new Integer[]{1,2}).toString()),self()
                     );
