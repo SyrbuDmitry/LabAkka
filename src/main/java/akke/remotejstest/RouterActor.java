@@ -20,7 +20,11 @@ public class RouterActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(TestResultMessage.class, t->StoreActor.tell(t,sender()))
                 .match(TestScript.class, s->TestRouter.tell(s,sender()))
-                .match(GetResaultMessage.class, r->StoreActor.tell(r,sender()))
+                .match(GetResaultMessage.class, r->{
+                    System.out.println("GET RESULTS REQUEST");
+                    StoreActor.tell(r,sender());
+
+                })
                 .match(ResultsMessage.class, r ->{
                     System.out.println("RESULTS: "+r.getResaults());
                 })
