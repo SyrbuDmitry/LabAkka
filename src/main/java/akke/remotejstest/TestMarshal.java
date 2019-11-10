@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TestMarshal {
     @JsonProperty("packageId")
-    private String packageId;
+    public String packageId;
     @JsonProperty("jsScript")
-    private String jsScript;
+    public String jsScript;
 }
