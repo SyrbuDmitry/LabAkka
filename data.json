@@ -4,11 +4,11 @@
 "functionName":"divideFn",
 "tests": [
 	{"testName":"test1",
-	 "expectedResult":"2.0",
+	 "expectedResult":"2.0"
 	 
 	},
 	{"testName":"test2",	 
-	 "expectedResult":"2.0",
+	 "expectedResult":"2.0"
 	}
 ]
 }
