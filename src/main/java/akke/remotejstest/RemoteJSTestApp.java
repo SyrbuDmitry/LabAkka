@@ -43,7 +43,7 @@ public class RemoteJSTestApp extends AllDirectives {
                 materializer
         );
         System.out.println("Server online at http://localhost:8085/\nPress RETURN to stop...");
-        Gson
+
         System.in.read();
         binding
                 .thenCompose(ServerBinding::unbind)
@@ -65,8 +65,8 @@ public class RemoteJSTestApp extends AllDirectives {
                         ),
 
                         pathSingleSlash(() ->
-                                post(() -> entity(Jackson.unmarshaller(TestMarshal.class),msg -> {
-                                    System.out.println(msg.jsScript);
+                                post(() -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> {
+                                    System.out.println(msg.JsScript);
 //                                    for(Test t:msg.tests){
 //                                        RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId),msg.functionName,msg.JsScript,t.params), ActorRef.noSender());
 //                                    }
