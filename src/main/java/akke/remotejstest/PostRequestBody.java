@@ -13,5 +13,5 @@ public class PostRequestBody {
     @JsonProperty("functionName")
     public String functionName;
     @JsonProperty("tests")
-    public List<Test> tests;
+    public Map<> tests;
  }
