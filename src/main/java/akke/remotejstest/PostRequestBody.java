@@ -1,5 +1,8 @@
 package akke.remotejstest;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class PostRequestBody {
@@ -7,4 +10,10 @@ public class PostRequestBody {
     public String JsScript;
     public String functionName;
     public List<Test> tests;
+    @JsonCreator
+    public PostRequestBody(@JsonProperty("packageId") String packageId, @JsonProperty("jsScript") String JsScript, @JsonProperty("functionName") String functionName)  {
+        this.packageId = packageId;
+        this.JsScript = JsScript;
+
+    }
  }
