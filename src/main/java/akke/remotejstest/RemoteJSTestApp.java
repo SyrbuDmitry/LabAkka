@@ -56,7 +56,7 @@ public class RemoteJSTestApp extends AllDirectives {
                 route(
                         pathSingleSlash(() ->
                             get( () ->
-                                    
+                                    parameter("packageID")
                             )
                         ),
                         pathSingleSlash(() ->
