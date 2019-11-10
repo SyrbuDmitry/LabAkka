@@ -18,6 +18,7 @@ import akka.http.javadsl.server.Route;
 import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
+import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.util.concurrent.CompletionStage;
@@ -65,7 +66,7 @@ public class RemoteJSTestApp extends AllDirectives {
                         ),
 
                         pathSingleSlash(() ->
-                                post(() -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> {
+                                post(() -> entity(Jackson.unmarshaller(PostRequestBody.class), msg -> {
                                     System.out.println(msg.JsScript);
 //                                    for(Test t:msg.tests){
 //                                        RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId),msg.functionName,msg.JsScript,t.params), ActorRef.noSender());

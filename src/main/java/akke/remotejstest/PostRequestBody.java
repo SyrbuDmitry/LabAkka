@@ -8,12 +8,12 @@ import java.lang.reflect.Array;
 import java.util.List;
 
 public class PostRequestBody {
-    @JsonProperty("packageId")
+
     public String packageId;
-    @JsonProperty("JsScript")
+
     public String JsScript;
-    @JsonProperty("functionName")
+
     public String functionName;
-    @JsonProperty
-    public Test[] tests;
+
+    public List<Test> tests;
  }
