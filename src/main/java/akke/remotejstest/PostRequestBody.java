@@ -13,6 +13,6 @@ public class PostRequestBody {
     public String JsScript;
     @JsonProperty("functionName")
     public String functionName;
-    @JsonBackReference
+    @Json
     public List<Test> tests;
  }
