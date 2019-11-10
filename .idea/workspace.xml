@@ -106,8 +106,8 @@
       <file leaf-file-name="RemoteJSTestApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="615">
+              <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,12 +380,12 @@
       <workItem from="1573141104447" duration="5685000" />
       <workItem from="1573228361934" duration="1000" />
       <workItem from="1573228400465" duration="5120000" />
-      <workItem from="1573384586059" duration="993000" />
+      <workItem from="1573384586059" duration="1022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17331000" />
+    <option name="totallyTimeSpent" value="17360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-98" y="103" width="1425" height="877" extended-state="0" />
@@ -954,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="615">
+          <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
