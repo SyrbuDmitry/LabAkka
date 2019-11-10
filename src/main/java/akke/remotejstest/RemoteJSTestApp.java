@@ -51,15 +51,13 @@ public class RemoteJSTestApp extends AllDirectives {
 
 
     public Route createRoute() {
-        // This handler generates responses to `/hello?name=XXX` requests
-
         return
                 route(
                         pathSingleSlash(() ->
                             get( () -> complete("GET!"))
                         ),
                         pathSingleSlash(() ->
-                                post( () -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> complete("GET!")))
+                                post( () -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> ))
                         )
                 );
 //                get(() -> concat(
