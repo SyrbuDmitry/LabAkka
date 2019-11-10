@@ -17,6 +17,5 @@ public class PostRequestBody {
 
     public List<Test> tests;
     PostRequestBody(){
-
     }
  }

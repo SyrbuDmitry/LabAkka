@@ -7,6 +7,5 @@ public class TestMarshal {
     public String packageId;
     public String jsScript;
     TestMarshal(){
-        
     }
 }
