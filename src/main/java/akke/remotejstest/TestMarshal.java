@@ -1,6 +1,6 @@
 package akke.remotejstest;
 
 public class TestMarshal {
-    String packageId,
-    String 
+    String packageId;
+    String jsScript;
 }
