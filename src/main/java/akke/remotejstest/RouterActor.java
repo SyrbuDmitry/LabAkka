@@ -13,7 +13,7 @@ public class RouterActor extends AbstractActor {
     private ActorRef TestRouter = getContext().actorOf(
             new RoundRobinPool(5)
                     .props(Props.create(TestActor.class)),
-            "Router for lab"
+            "RouterForLab"
     );
     @Override
     public Receive createReceive() {
