@@ -51,30 +51,8 @@ public class RemoteJSTestApp extends AllDirectives {
 
     public Route createRoute() {
         // This handler generates responses to `/hello?name=XXX` requests
-        Route helloRoute =
-                parameterOptional("name", optName -> {
-                    String name = optName.orElse("Mister X");
-                    return complete("Hello " + name + "!");
-                });
-
-        return
-                // here the complete behavior for this server is defined
-
-                // only handle GET requests
-                get(() -> concat(
-                        // matches the empty path
-                        pathSingleSlash(() ->
-                                // return a constant string with a certain content type
-                                complete(HttpEntities.create(ContentTypes.TEXT_HTML_UTF8, "<html><body>Hello world!</body></html>"))
-                        ),
-                        path("ping", () ->
-                                // return a simple `text/plain` response
-                                complete("PONG!")
-                        ),
-                        path("hello", () ->
-                                // uses the route defined above
-                                helloRoute
-                        )
-                ));
+        Route route = get(
+                () -> complete("Received GET") ).orElse(
+                () -> complete("Received something else") )
     }
 }
