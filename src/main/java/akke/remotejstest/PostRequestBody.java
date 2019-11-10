@@ -19,6 +19,5 @@ public class PostRequestBody {
         this.JsScript = JsScript;
         this.functionName = functionName;
         this.tests = tests;
-
     }
  }
