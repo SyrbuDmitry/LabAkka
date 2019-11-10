@@ -17,8 +17,8 @@ public class RouterActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match(TestResultMessage.class, t->StoreActor.tell(t,sender()))
-                .match(TestScript.class, s->TestRouter.tell(s,sender()))
+                .match(TestResultMessage.class, t->StoreActor.tell(t,self()))
+                .match(TestScript.class, s->TestRouter.tell(s,self()))
                 .match(GetResaultMessage.class, r->{
                     System.out.println("GET RESULTS REQUEST IN ROUTERACTOR");
                     StoreActor.tell(r,self());
