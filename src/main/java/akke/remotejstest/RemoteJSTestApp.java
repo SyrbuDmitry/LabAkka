@@ -8,6 +8,7 @@ import akka.http.impl.engine.client.PoolConductor;
 import akka.http.javadsl.ConnectHttp;
 import akka.http.javadsl.Http;
 import akka.http.javadsl.ServerBinding;
+import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.model.ContentTypes;
 import akka.http.javadsl.model.HttpEntities;
 import akka.http.javadsl.model.HttpRequest;
@@ -58,7 +59,7 @@ public class RemoteJSTestApp extends AllDirectives {
                             get( () -> complete("GET!"))
                         ),
                         pathSingleSlash(() ->
-                                post( () -> entity())
+                                post( () -> entity(Jackson.unmarshaller(PostRequestBody.class),msg ->))
                         )
                 );
 //                get(() -> concat(
