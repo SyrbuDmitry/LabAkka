@@ -55,7 +55,10 @@ public class RemoteJSTestApp extends AllDirectives {
         return
                 route(
                         pathSingleSlash(() ->
-                            get( () -> complete("PONG!"))
+                            get( () -> complete("GET!"))
+                        ),
+                        pathSingleSlash(() ->
+                                post( () -> complete("POST!"))
                         )
                 );
 //                get(() -> concat(
