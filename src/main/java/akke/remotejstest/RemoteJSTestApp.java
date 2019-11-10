@@ -63,6 +63,7 @@ public class RemoteJSTestApp extends AllDirectives {
                                     )
                             )
                         ),
+
                         pathSingleSlash(() ->
                                 post(() -> entity(Jackson.unmarshaller(PostRequestBody.class),msg -> {
                                     for(Test t:msg.tests){

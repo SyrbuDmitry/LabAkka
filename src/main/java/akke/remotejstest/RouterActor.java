@@ -22,7 +22,7 @@ public class RouterActor extends AbstractActor {
                 .match(TestScript.class, s->TestRouter.tell(s,sender()))
                 .match(GetResaultMessage.class, r->StoreActor.tell(r,sender()))
                 .match(ResultsMessage.class, r ->{
-                    System.out.println(r.getResaults());
+                    System.out.println("RESULTS: "+r.getResaults());
                 })
                 .build();
     }
