@@ -56,16 +56,19 @@ public class RemoteJSTestApp extends AllDirectives {
                 // here the complete behavior for this server is defined
 
                 // only handle GET requests
-                get(() -> concat(
-                        // matches the empty path
-                        pathSingleSlash(() ->
-                                // return a constant string with a certain content type
-                                complete(HttpEntities.create(ContentTypes.TEXT_HTML_UTF8, "<html><body>Hello world!</body></html>"))
-                        ),
-                        path("ping", () ->
-                                // return a simple `text/plain` response
-                                complete("PONG!")
-                        )
-                ));
+                route(
+                        
+                )
+//                get(() -> concat(
+//                        // matches the empty path
+//                        pathSingleSlash(() ->
+//                                // return a constant string with a certain content type
+//                                complete(HttpEntities.create(ContentTypes.TEXT_HTML_UTF8, "<html><body>Hello world!</body></html>"))
+//                        ),
+//                        path("ping", () ->
+//                                // return a simple `text/plain` response
+//                                complete("PONG!")
+//                        )
+//                ));
     }
 }
