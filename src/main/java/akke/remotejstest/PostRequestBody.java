@@ -16,4 +16,7 @@ public class PostRequestBody {
     public String functionName;
 
     public List<Test> tests;
+    PostRequestBody(){
+
+    }
  }
