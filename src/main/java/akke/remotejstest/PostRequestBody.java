@@ -12,6 +12,6 @@ public class PostRequestBody {
     public String JsScript;
     @JsonProperty("functionName")
     public String functionName;
-    @JsonProperty("tests")
+    @Json
     public List<Test> tests;
  }
