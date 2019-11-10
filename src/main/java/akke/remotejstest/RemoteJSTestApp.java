@@ -51,12 +51,7 @@ public class RemoteJSTestApp extends AllDirectives {
 
     public Route createRoute() {
         // This handler generates responses to `/hello?name=XXX` requests
-        Route helloRoute =
-                parameterOptional("name", optName -> {
-                    String name = optName.orElse("Mister X");
-                    return complete("Hello " + name + "!");
-                });
-
+        
         return
                 // here the complete behavior for this server is defined
 
@@ -70,10 +65,6 @@ public class RemoteJSTestApp extends AllDirectives {
                         path("ping", () ->
                                 // return a simple `text/plain` response
                                 complete("PONG!")
-                        ),
-                        path("hello", () ->
-                                // uses the route defined above
-                                helloRoute
                         )
                 ));
     }
