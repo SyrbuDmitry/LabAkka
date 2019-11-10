@@ -18,12 +18,13 @@ import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
+import java.io.IOException;
 import java.util.concurrent.CompletionStage;
 
 import static akka.http.javadsl.server.Directives.*;
 
 public class RemoteJSTestApp extends AllDirectives {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ActorSystem system = ActorSystem.create("lab4");
 //        ActorRef router = system.actorOf(
 //                new RoundRobinPool(1)
