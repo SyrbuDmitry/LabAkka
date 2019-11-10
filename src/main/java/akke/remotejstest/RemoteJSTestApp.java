@@ -58,6 +58,7 @@ public class RemoteJSTestApp extends AllDirectives {
                             get( () ->
                                     parameter("packageID", id ->{
                                         RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)),ActorRef.noSender());
+                                        return complete("Request sent!");
                                     }
                                     )
                             )
