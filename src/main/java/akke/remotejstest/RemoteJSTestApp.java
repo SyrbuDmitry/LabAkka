@@ -41,7 +41,7 @@ public class RemoteJSTestApp extends AllDirectives {
                 ConnectHttp.toHost("localhost",8085),
                 materializer
         );
-        System.out.println("Server online at http://localhost:8080/\nPress RETURN to stop...");
+        System.out.println("Server online at http://localhost:8085/\nPress RETURN to stop...");
         System.in.read();
         binding
                 .thenCompose(ServerBinding::unbind)
@@ -51,7 +51,7 @@ public class RemoteJSTestApp extends AllDirectives {
 
     public Route createRoute() {
         // This handler generates responses to `/hello?name=XXX` requests
-        
+
         return
                 // here the complete behavior for this server is defined
 
