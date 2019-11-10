@@ -74,6 +74,7 @@ public class RemoteJSTestApp extends AllDirectives {
                                     return complete("Tests started!");
                                 }
                         ));
+                                    return complete("Tests started!");
     }
                         )
                 );
