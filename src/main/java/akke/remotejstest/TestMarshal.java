@@ -1,5 +1,6 @@
 package akke.remotejstest;
 
 public class TestMarshal {
-    int 
+    String packageId,
+    String 
 }
