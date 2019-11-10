@@ -55,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestActor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <caret line="19" column="77" lean-forward="false" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -414,12 +414,12 @@
       <workItem from="1573141104447" duration="5685000" />
       <workItem from="1573228361934" duration="1000" />
       <workItem from="1573228400465" duration="5120000" />
-      <workItem from="1573384586059" duration="16072000" />
+      <workItem from="1573384586059" duration="16115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32410000" />
+    <option name="totallyTimeSpent" value="32453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="23" width="1561" height="877" extended-state="0" />
@@ -1005,7 +1005,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/TestActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <caret line="19" column="77" lean-forward="false" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
