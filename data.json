@@ -1,4 +1,4 @@
 {
 "packageId":"11",
-"jsScript":"var divideFn = function(a,b) { return a/b}  ",
+"jsScript":"var divideFn = function(a,b) { return a/b }"
 }
