@@ -8,6 +8,7 @@ import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class TestActor extends AbstractActor {
 
@@ -21,7 +22,7 @@ public class TestActor extends AbstractActor {
                     String params = String.valueOf(m.params[0])+","+String.valueOf(m.params[1]);
                     System.out.println(m.functionName+" "+m.functionBody+" "+params);
                     Integer[] pars = new Integer[m.params.length];
-                    
+                    pars= Arrays.copyOf((Integer[])m.params,m.params.length);
                     sender().tell(
                             new TestResultMessage(m.packageID,invocable.invokeFunction(m.functionName, new Integer[]{1,2}).toString()),self()
                     );
