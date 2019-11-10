@@ -20,6 +20,7 @@ import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import com.google.gson.Gson;
 
+import javax.xml.bind.JAXBContext;
 import java.io.IOException;
 import java.util.concurrent.CompletionStage;
 
@@ -67,7 +68,7 @@ public class RemoteJSTestApp extends AllDirectives {
 
                         pathSingleSlash(() ->
                                 post(() ->{
-                                    String s;
+                                    JAXBContext jc = JAXBContext.newInstance(Employee.class);
                                        return entity(Jackson.unmarshaller(PostRequestBody.class), msg -> {
                                     System.out.println(msg.JsScript);
 //                                    for(Test t:msg.tests){
