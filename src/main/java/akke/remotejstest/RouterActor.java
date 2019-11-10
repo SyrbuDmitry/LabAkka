@@ -21,7 +21,7 @@ public class RouterActor extends AbstractActor {
                 .match(TestResultMessage.class, t->StoreActor.tell(t,sender()))
                 .match(TestScript.class, s->TestRouter.tell(s,sender()))
                 .match(GetResaultMessage.class, r->{
-                    System.out.println("GET RESULTS REQUEST");
+                    System.out.println("GET RESULTS REQUEST IN ROUTERACTOR");
                     StoreActor.tell(r,sender());
 
                 })
