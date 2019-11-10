@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.lang.reflect.Array;
 import java.util.List;
 
 public class PostRequestBody {
@@ -13,6 +14,6 @@ public class PostRequestBody {
     public String JsScript;
     @JsonProperty("functionName")
     public String functionName;
-    @Json
-    public List<Test> tests;
+    @JsonProperty
+    public Test[] tests;
  }
