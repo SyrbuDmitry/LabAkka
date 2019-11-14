@@ -60,7 +60,7 @@ public class RemoteJSTestApp extends AllDirectives {
                                 get(() ->
                                         parameter("packageID", id -> {
                                                     RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)), ActorRef.noSender());
-                                                    return complete("Request sent!");
+                                                    return complete("\nRequest sent!\n");
                                                 }
                                         )
                                 )
@@ -71,7 +71,7 @@ public class RemoteJSTestApp extends AllDirectives {
                                     for (Test t : msg.tests) {
                                         RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId), msg.functionName, msg.JsScript, t.params), ActorRef.noSender());
                                     }
-                                    return complete("Tests started!");
+                                    return complete("\nTests started!\n");
                                 }))
                         )
                 );
