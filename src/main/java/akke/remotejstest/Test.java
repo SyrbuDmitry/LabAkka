@@ -7,10 +7,10 @@ import java.util.List;
 public class Test {
     public String testName;
     public String expectedResult;
-    public int[] params;
+    public Object[] params;
     Test(@JsonProperty("testName") String testName,
          @JsonProperty("expectedResult") String expectedResult,
-         @JsonProperty("params") int[] params){
+         @JsonProperty("params") Object[] params){
         this.testName = testName;
         this.expectedResult = expectedResult;
         this.params = params;

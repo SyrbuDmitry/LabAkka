@@ -35,6 +35,7 @@ public class RemoteJSTestApp extends AllDirectives {
 //        );
         ActorRef RouteActor = system.actorOf(Props.create(RouterActor.class));
         final Http http = Http.get(system);
+
         RemoteJSTestApp instance = new RemoteJSTestApp();
         final ActorMaterializer materializer = ActorMaterializer.create(system);
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = instance.createRoute(RouteActor).flow(system, materializer);
