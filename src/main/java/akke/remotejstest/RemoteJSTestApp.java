@@ -41,7 +41,7 @@ public class RemoteJSTestApp extends AllDirectives {
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow = instance.createRoute(RouteActor).flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost("localhost",8085),
+                ConnectHttp.toHost("localhost", 8085),
                 materializer
         );
         System.out.println("Server online at http://localhost:8085/\nPress RETURN to stop...");
@@ -53,38 +53,27 @@ public class RemoteJSTestApp extends AllDirectives {
     }
 
 
-    public Route createRoute(ActorRef RouteActor) {
+    private Route createRoute(ActorRef RouteActor) {
         return
                 route(
                         pathSingleSlash(() ->
-                            get( () ->
-                                    parameter("packageID", id ->{
-                                        RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)),ActorRef.noSender());
-                                        return complete("Request sent!");
-                                    }
-                                    )
-                            )
+                                get(() ->
+                                        parameter("packageID", id -> {
+                                                    RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)), ActorRef.noSender());
+                                                    return complete("Request sent!");
+                                                }
+                                        )
+                                )
                         ),
 
                         pathSingleSlash(() ->
                                 post(() -> entity(Jackson.unmarshaller(PostRequestBody.class), msg -> {
-                                    for(Test t:msg.tests){
-                                        RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId),msg.functionName,msg.JsScript,t.params), ActorRef.noSender());
+                                    for (Test t : msg.tests) {
+                                        RouteActor.tell(new TestScript(Integer.parseInt(msg.packageId), msg.functionName, msg.JsScript, t.params), ActorRef.noSender());
                                     }
                                     return complete("Tests started!");
                                 }))
                         )
                 );
-//                get(() -> concat(
-//                        // matches the empty path
-//                        pathSingleSlash(() ->
-//                                // return a constant string with a certain content type
-//                                complete(HttpEntities.create(ContentTypes.TEXT_HTML_UTF8, "<html><body>Hello world!</body></html>"))
-//                        ),
-//                        path("ping", () ->
-//                                // return a simple `text/plain` response
-//                                complete("PONG!")
-//                        )
-//                ));
     }
 }
