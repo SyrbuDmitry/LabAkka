@@ -88,8 +88,8 @@
       <file leaf-file-name="RemoteJSTestApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="63" column="91" lean-forward="false" selection-start-line="63" selection-start-column="91" selection-end-line="63" selection-end-column="91" />
+            <state relative-caret-position="195">
+              <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +175,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="253" />
+    <option name="x" value="-40" />
+    <option name="y" value="167" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -379,15 +380,15 @@
       <workItem from="1573228361934" duration="1000" />
       <workItem from="1573228400465" duration="5120000" />
       <workItem from="1573384586059" duration="18496000" />
-      <workItem from="1573741018568" duration="1135000" />
+      <workItem from="1573741018568" duration="1175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35969000" />
+    <option name="totallyTimeSpent" value="36009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="253" width="1440" height="877" extended-state="0" />
+    <frame x="-40" y="167" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -963,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="63" column="91" lean-forward="false" selection-start-line="63" selection-start-column="91" selection-end-line="63" selection-end-column="91" />
+        <state relative-caret-position="195">
+          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

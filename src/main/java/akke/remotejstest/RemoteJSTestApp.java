@@ -61,10 +61,8 @@ public class RemoteJSTestApp extends AllDirectives {
                         pathSingleSlash(() ->
                                 get(() ->
                                         parameter("packageID", id -> {
-                                            Future<Object> result = Patterns.ask(RouteActor, SemaphoreActor.makeRequest(), 5000);
-                                            RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)), ActorRef.noSender());
-                                                    return complete("\nRequest sent!\n");
-                                                }
+                                            Future<Object> result = Patterns.ask(RouteActor, new GetResaultMessage(Integer.parseInt(id)), 5000);
+                                            return 
                                         )
                                 )
                         ),
