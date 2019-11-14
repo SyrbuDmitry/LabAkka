@@ -8,6 +8,7 @@ import akka.japi.pf.ReceiveBuilder;
 import akka.pattern.Patterns;
 import akka.pattern.PatternsCS;
 import akka.routing.RoundRobinPool;
+import akka.util.Timeout;
 import scala.concurrent.Await;
 import scala.concurrent.Future;
 import scala.concurrent.duration.Duration;
@@ -27,7 +28,9 @@ public class RouterActor extends AbstractActor {
                 .match(GetResaultMessage.class, r->{
                     System.out.println(sender().toString());
                     Future<Object> result = Patterns.ask(StoreActor,r,5000);
-                    ResultsMessage q = (ResultsMessage)result;
+                    Timeout timeout = new Timeout(Duration.parse("5 seconds"));
+
+                    ResultsMessage q = (ResultsMessage)Await.result(result, Duration.Zero());
                     sender().tell(q,self());
 
                 })
