@@ -5,7 +5,10 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.japi.pf.ReceiveBuilder;
+import akka.pattern.Patterns;
+import akka.pattern.PatternsCS;
 import akka.routing.RoundRobinPool;
+import scala.concurrent.Future;
 
 
 public class RouterActor extends AbstractActor {
@@ -22,6 +25,7 @@ public class RouterActor extends AbstractActor {
                 .match(GetResaultMessage.class, r->{
                     System.out.println(sender().toString());
                     StoreActor.tell(r,self());
+                    Future<Object> result = PatternsCS.ask()
 
                 })
                 .match(ResultsMessage.class, r ->{
