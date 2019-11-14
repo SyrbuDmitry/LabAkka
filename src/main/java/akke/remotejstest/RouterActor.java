@@ -30,7 +30,6 @@ public class RouterActor extends AbstractActor {
                     Future<Object> result = Patterns.ask(StoreActor,r,5000);
                     ResultsMessage q = (ResultsMessage)Await.result(result, Duration.create(5, SECONDS));
                     sender().tell(q,self());
-
                 })
                 .build();
     }
