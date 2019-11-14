@@ -27,7 +27,7 @@ public class RouterActor extends AbstractActor {
                 .match(GetResaultMessage.class, r->{
                     System.out.println(sender().toString());
                     Future<Object> result = Patterns.ask(StoreActor,r,5000);
-                    ResultsMessage q = (ResultsMessage)Await.result(result, Duration.Zero());
+                    ResultsMessage q = (ResultsMessage)result;
                     sender().tell(q,self());
 
                 })
