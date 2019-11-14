@@ -15,10 +15,12 @@ import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.server.AllDirectives;
 import akka.http.javadsl.server.Route;
+import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import com.google.gson.Gson;
+import scala.concurrent.Future;
 
 import java.io.IOException;
 import java.util.concurrent.CompletionStage;
@@ -59,8 +61,8 @@ public class RemoteJSTestApp extends AllDirectives {
                         pathSingleSlash(() ->
                                 get(() ->
                                         parameter("packageID", id -> {
-                                                    RouteActor.tell(new GetResaultMessage(Integer.parseInt(id)), ActorRef.noSender());
-                                                    return complete("Request sent!");
+                                            Future<Object> result = Patterns.ask(RouteActor., SemaphoreActor.makeRequest(), 5000);
+                                            return completeOKWithFuture(result, Jackson.marshaller());
                                                 }
                                         )
                                 )
