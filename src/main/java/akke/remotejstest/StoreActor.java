@@ -26,7 +26,7 @@ public class StoreActor extends AbstractActor {
                     System.out.println("receive message! "+m.toString());
                 })
                 .match(GetResaultMessage.class, req -> {
-                    System.out.println("GET RESULTS REQUEST IN STOREACTOR");
+                    System.out.println(sender().toString());
                     sender().tell(
                             new ResultsMessage(req.getID(), store.get(req.getID())), self());
                         }
