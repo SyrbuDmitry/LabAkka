@@ -28,15 +28,8 @@ public class RouterActor extends AbstractActor {
                 .match(GetResaultMessage.class, r->{
                     System.out.println(sender().toString());
                     Future<Object> result = Patterns.ask(StoreActor,r,5000);
-                    //Timeout timeout = new Timeout(Duration.parse("5 seconds"));
-
                     ResultsMessage q = (ResultsMessage)Await.result(result, Duration.create(5, SECONDS));
                     sender().tell(q,self());
-
-                })
-                .match(ResultsMessage.class, r ->{
-                    System.out.println("RECEIVED REUSLTS IN ROUTERACTOR"+sender().toString());
-                    System.out.println("RESULTS: "+r.getResaults());
 
                 })
                 .build();
