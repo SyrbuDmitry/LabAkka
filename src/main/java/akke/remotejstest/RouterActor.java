@@ -12,7 +12,7 @@ import akka.util.Timeout;
 import scala.concurrent.Await;
 import scala.concurrent.Future;
 import scala.concurrent.duration.Duration;
-
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class RouterActor extends AbstractActor {
     private ActorRef StoreActor = getContext().actorOf(Props.create(StoreActor.class),"storeActor");
@@ -30,7 +30,7 @@ public class RouterActor extends AbstractActor {
                     Future<Object> result = Patterns.ask(StoreActor,r,5000);
                     //Timeout timeout = new Timeout(Duration.parse("5 seconds"));
 
-                    ResultsMessage q = (ResultsMessage)Await.result(result, Duration.create(1, SECONDS));
+                    ResultsMessage q = (ResultsMessage)Await.result(result, Duration.create(5, SECONDS));
                     sender().tell(q,self());
 
                 })
