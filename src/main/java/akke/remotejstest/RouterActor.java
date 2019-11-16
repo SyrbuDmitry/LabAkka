@@ -22,7 +22,6 @@ public class RouterActor extends AbstractActor {
     public Receive createReceive() {
         return ReceiveBuilder.create()
                 .match(TestResultMessage.class, t->StoreActor.tell(t,self()))
-                .match(TestScript.class, s->TestRouter.tell(s,self()))
                 .match(PostRequestBody.class, msg->{
                     for (Test t : msg.tests) {
                         TestRouter.tell(new TestScript(msg.packageId, msg.functionName, msg.JsScript, t.params), self());
