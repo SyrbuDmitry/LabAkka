@@ -23,10 +23,8 @@ public class StoreActor extends AbstractActor {
                         resultString.add(m.getResult());
                         store.put(m.getID(), resultString);
                     }
-                    System.out.println("receive message! "+m.toString());
                 })
-                .match(GetResaultMessage.class, req -> {
-                    System.out.println(sender().toString());
+                .match(GetResultMessage.class, req -> {
                     sender().tell(
                             new ResultsMessage(req.getID(), store.get(req.getID())), self());
                         }

@@ -2,13 +2,10 @@ package akke.remotejstest;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.japi.pf.ReceiveBuilder;
 import akka.pattern.Patterns;
-import akka.pattern.PatternsCS;
 import akka.routing.RoundRobinPool;
-import akka.util.Timeout;
 import scala.concurrent.Await;
 import scala.concurrent.Future;
 import scala.concurrent.duration.Duration;
@@ -25,9 +22,9 @@ public class RouterActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(TestResultMessage.class, t->StoreActor.tell(t,self()))
                 .match(TestScript.class, s->TestRouter.tell(s,self()))
-                .match(GetResaultMessage.class, r->{
+                .match(GetResultMessage.class, r->{
                     Future<Object> futureResults = Patterns.ask(StoreActor,r,5000);
-                    ResultsMessage storedResults = (ResultsMessage)Await.result(futureResults, Duration.create(5, SECONDS));
+                    ResultsMessage storedResults = (ResultsMessage)Await.result(futureResults, Duration.create(2, SECONDS));
                     sender().tell(storedResults,self());
                 })
                 .build();

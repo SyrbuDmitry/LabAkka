@@ -1,9 +1,9 @@
 package akke.remotejstest;
 
-public class GetResaultMessage {
+public class GetResultMessage {
     private int packageID;
 
-    GetResaultMessage(int id){
+    GetResultMessage(int id){
         this.packageID = id;
     }
 

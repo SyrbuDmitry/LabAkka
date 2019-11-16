@@ -15,7 +15,7 @@ public class ResultsMessage {
     public int getID() {
         return packageID;
     }
-    public List<String> getResaults(){
+    public List<String> getResults(){
         return testResults;
     }
 }

@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 public class Test {
-    public String testName;
-    public String expectedResult;
+    private String testName;
+    private String expectedResult;
     public Object[] params;
     Test(@JsonProperty("testName") String testName,
          @JsonProperty("expectedResult") String expectedResult,
