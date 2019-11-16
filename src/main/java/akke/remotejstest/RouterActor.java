@@ -23,10 +23,7 @@ public class RouterActor extends AbstractActor {
                 .match(TestResultMessage.class, t->StoreActor.tell(t,self()))
                 .match(TestScript.class, s->TestRouter.tell(s,self()))
                 .match(GetResultMessage.class, r->{
-                   // Future<Object> futureResults = Patterns.ask(StoreActor,r,5000);
-                    //ResultsMessage storedResults = (ResultsMessage)Await.result(futureResults, Duration.create(2, SECONDS));
                     StoreActor.tell(r,sender());
-                    //sender().tell(storedResults,self());
                 })
                 .build();
     }
