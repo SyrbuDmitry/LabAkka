@@ -25,7 +25,7 @@ public class RouterActor extends AbstractActor {
                 .match(TestScript.class, s->TestRouter.tell(s,self()))
                 .match(PostRequestBody.class, msg->{
                     for (Test t : msg.tests) {
-                        TestRouter.tell(new TestScript(msg.packageId, msg.functionName, msg.JsScript, t.params), ActorRef.noSender());
+                        TestRouter.tell(new TestScript(msg.packageId, msg.functionName, msg.JsScript, t.params), self());
                     }
                 })
                 .match(GetResultMessage.class, r->{
