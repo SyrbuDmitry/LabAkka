@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestBody.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestMessage.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,8 +86,8 @@
       <file leaf-file-name="RouterActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="345">
+              <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +98,8 @@
       <file leaf-file-name="RemoteJSTestApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="61" column="76" lean-forward="true" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="76" />
+            <state relative-caret-position="363">
+              <caret line="52" column="56" lean-forward="true" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,8 +129,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostRequestBody.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestBody.java">
+      <file leaf-file-name="PostRequestMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestMessage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="82">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -186,8 +188,8 @@
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
       </list>
     </option>
   </component>
@@ -198,7 +200,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-25" />
+    <option name="x" value="7" />
     <option name="y" value="23" />
     <option name="width" value="1640" />
     <option name="height" value="877" />
@@ -427,15 +429,15 @@
       <workItem from="1573741018568" duration="3852000" />
       <workItem from="1573846211683" duration="602000" />
       <workItem from="1573848558009" duration="84000" />
-      <workItem from="1573877051891" duration="4776000" />
+      <workItem from="1573877051891" duration="5094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44148000" />
+    <option name="totallyTimeSpent" value="44466000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-25" y="23" width="1640" height="877" extended-state="0" />
+    <frame x="7" y="23" width="1640" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -876,7 +878,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestBody.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -963,8 +965,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="61" column="76" lean-forward="true" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="76" />
+        <state relative-caret-position="363">
+          <caret line="52" column="56" lean-forward="true" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -973,8 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="345">
+          <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
