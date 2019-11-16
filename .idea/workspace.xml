@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a367a7-7288-4f51-ae62-7cfff8def25c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/GetResaultMessage.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/GetResultMessage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestBody.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/PostRequestBody.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/ResultsMessage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/RouterActor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/StoreActor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/Test.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/Test.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestActor.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestActor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestMarshal.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestScript.java" afterPath="$PROJECT_DIR$/src/main/java/akke/remotejstest/TestScript.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
-              <caret line="39" column="95" lean-forward="false" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -438,12 +427,12 @@
       <workItem from="1573741018568" duration="3852000" />
       <workItem from="1573846211683" duration="602000" />
       <workItem from="1573848558009" duration="84000" />
-      <workItem from="1573877051891" duration="3374000" />
+      <workItem from="1573877051891" duration="3392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42746000" />
+    <option name="totallyTimeSpent" value="42764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="158" y="23" width="1482" height="877" extended-state="0" />
@@ -985,7 +974,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/akke/remotejstest/RemoteJSTestApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="39" column="95" lean-forward="false" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
