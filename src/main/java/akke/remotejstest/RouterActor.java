@@ -6,6 +6,7 @@ import akka.actor.Props;
 import akka.japi.pf.ReceiveBuilder;
 import akka.pattern.Patterns;
 import akka.routing.RoundRobinPool;
+import javafx.geometry.Pos;
 import scala.concurrent.Await;
 import scala.concurrent.Future;
 import scala.concurrent.duration.Duration;
@@ -22,6 +23,11 @@ public class RouterActor extends AbstractActor {
         return ReceiveBuilder.create()
                 .match(TestResultMessage.class, t->StoreActor.tell(t,self()))
                 .match(TestScript.class, s->TestRouter.tell(s,self()))
+                .match(PostRequestBody.class, msg->{
+                    for (Test t : msg.tests) {
+                        TestRouter.tell(new TestScript(msg.packageId, msg.functionName, msg.JsScript, t.params), ActorRef.noSender());
+                    }
+                })
                 .match(GetResultMessage.class, r->{
                     StoreActor.tell(r,sender());
                 })
